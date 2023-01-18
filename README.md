@@ -13,22 +13,19 @@ There are 2 main folders:
 - `server`: The starting point of our GraphQL server.
 - `client`: The starting point of our React application.
 
-To get started:
 
-1. Navigate to the `server` folder.
-1. Run `npm install`.
-1. Run `npm start`.
+## Lift-off I: Basics
 
-This will start the GraphQL API server.
+* ApolloServer is a graphQL server for Node.JS that simplifies serving and consuming graphQL APIs.
 
-In another Terminal window,
+* Learned how to define a GraphQL Schema using SDL (Schema Definition Language).
 
-1. Navigate to the `client` folder.
-1. Run `npm install`.
-1. Run `npm start`.
+* Learned how to create a GraphQL Server using Apollo.
 
-This will open up `localhost:3000` in your web browser.
+* Learned how to create a GraphQL Client using Apollo.
 
-## Getting Help
+* Learned how to mock data using GraphQL Client.
 
-For any issues or problems concerning the course content, please refer to the [Odyssey topic in our community forums](https://community.apollographql.com/tags/c/help/6/odyssey).
+* Learned about the Apollo GraphQL Sandbox.
+
+
