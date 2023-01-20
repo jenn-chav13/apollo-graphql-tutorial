@@ -29,3 +29,10 @@ There are 2 main folders:
 * Learned about the Apollo GraphQL Sandbox.
 
 
+## Lift-off II: Resolvers
+
+### Resolver functions
+
+Resolver function's mission is to populate the data for a field in the schema. It has the same name as the field
+that if populates data for. It can fetch data from any data source, then transforms that data into the shape your client requires.
+
