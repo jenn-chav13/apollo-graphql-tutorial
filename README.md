@@ -36,3 +36,15 @@ There are 2 main folders:
 Resolver function's mission is to populate the data for a field in the schema. It has the same name as the field
 that if populates data for. It can fetch data from any data source, then transforms that data into the shape your client requires.
 
+## Lift-off III: Arguments
+
+Pretty straightforward. You can pass arguments to a query to search for specific data. 
+For example 
+
+```GraphQL
+query GetTrack($trackId: ID!) {
+    track(id: $trackId) {
+        id
+    }
+}
+```
