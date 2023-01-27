@@ -1,5 +1,8 @@
 const { RESTDataSource } = require('apollo-datasource-rest');
 
+// RESTDataSource: 
+//It automatically handles resource caching and request deduplication for our REST API calls
+//To keep data-fetching implementations in a dedicated class and keep resolvers simple and clean
 class TrackAPI extends RESTDataSource {
 
     constructor() {
@@ -21,6 +24,14 @@ class TrackAPI extends RESTDataSource {
 
     getTrack(trackId) {
         return this.get(`track/${encodeURIComponent(trackId)}`);
+    }
+
+    getModule(moduleId) {
+        return this.get(`/module/${encodeURIComponent(moduleId)}`);
+    }
+
+    incrementTrackViews(trackId) {
+        return this.patch(`/track/${trackId}/numberOfViews`);
     }
 }
 
